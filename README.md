@@ -1,3 +1,21 @@
+(note: I dont really know how to document these things at a professional level, so I kept it informal)
+
+Getting to My Solution:
+
+I started off by researching about sentiment analysis and how to implement it, and I immediately came across a roadblock. Most programs that employ sentiment analysis have been created by a team of individuals throughout a long time using either "hard coded" rules, or Artificial Intelligence models. However, I found a VERY helpful API called Monkey Learn, which would simply return the "sentiment" of a text that I could input, all in less than 10 lines of code. 
+
+The API can classify many types of text as being either "positive" , "neutral", or "negative" , and has different models for different types of texts (a list of the classifiers can be found at the bottom of my output). 
+
+From the given test input, the program outputted that the sentiment of this text was "Positive", with a confidence of "0.626". I would generally agree with this result, as the text seemed to compliment the subject. Since the model I used in the API is generally trained for the purpose of product reviews, this was a very predictable output. I also removed all of the instances of \n in the text, and it returned the same result with the same confidence
+
+Then, I wanted to see the sentiments of each sentence in the input text, so I parsed through the input, separated out the sentences, and I ran it all through the classifier. I counted up the totals for each of the three classifications in hopes that it would provide me with insight into how the classifier handled the multiple sentences during the first call. 
+
+SOURCES:
+Api used: https://monkeylearn.com/api/v3/?python#classifier-api
+
+
+
+
 # ACM Research Coding Challenge (Fall 2021)
 
 ## [](https://github.com/ACM-Research/Coding-Challenge-F21#no-collaboration-policy)No Collaboration Policy
